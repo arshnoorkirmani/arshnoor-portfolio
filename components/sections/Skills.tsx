@@ -35,8 +35,7 @@ export default function Skills({
       id="skills"
       className="py-32 border-y border-border relative overflow-hidden w-full"
     >
-      {/* Abstract Backgrounds */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] pointer-events-none z-0"></div>
+      {/* No background glow */}
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         <div className="text-center mb-20 max-w-3xl mx-auto">
@@ -72,10 +71,9 @@ export default function Skills({
               <motion.div
                 key={idx}
                 variants={cardVariants}
-                className={`relative p-7 md:p-8 rounded-3xl bg-card border border-border shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-700 group overflow-hidden ${colSpan}`}
+                className={`relative p-7 md:p-8 bg-card rounded-xl border border-border shadow-sm hover:shadow-md hover:border-border/80 transition-all duration-700 group overflow-hidden ${colSpan}`}
               >
-                {/* Decorative ambient glow */}
-                <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 rounded-full blur-[60px] group-hover:bg-primary/30 transition-colors duration-700" />
+                {/* No top glow */}
                 
                 {/* Large decorative icon in background */}
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-[0.015] pointer-events-none">
@@ -84,7 +82,7 @@ export default function Skills({
 
                 <div className="relative z-10 flex flex-col">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-secondary flex items-center justify-center border border-border/50 group-hover:border-primary/50 group-hover:bg-primary/10 transition-colors duration-500 shrink-0 shadow-sm">
+                    <div className="w-11 h-11 bg-secondary rounded-lg flex items-center justify-center border border-border group-hover:border-border/80 transition-colors duration-500 shrink-0 shadow-sm">
                       <Icon className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
                     </div>
                     <div>
@@ -105,7 +103,7 @@ export default function Skills({
                     {cat.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="px-3 py-2 rounded-full text-[13px] font-medium bg-background text-foreground border border-border/80 shadow-sm hover:bg-primary hover:text-primary-foreground hover:border-primary hover:shadow-md hover:shadow-primary/10 transition-all duration-300 cursor-default"
+                        className="px-3 py-2 text-[13px] font-medium bg-background rounded-md text-foreground border border-border shadow-sm hover:bg-primary hover:text-primary-foreground hover:shadow-md transition-all duration-300 cursor-default"
                       >
                         {skill}
                       </span>

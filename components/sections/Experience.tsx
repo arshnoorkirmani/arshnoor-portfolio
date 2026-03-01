@@ -10,7 +10,7 @@ export default function Experience({
   experience: ExperienceItem[];
 }) {
   return (
-    <section id="experience" className="py-32 w-full">
+    <section id="experience" className="py-20 md:py-24 lg:py-28 w-full">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex items-center gap-4 mb-20">
           <Briefcase className="w-10 h-10 text-primary" />
@@ -49,7 +49,7 @@ export default function Experience({
 
                 {/* Right side: Content Card */}
                 <div className="flex-1 w-full pl-14 md:pl-10">
-                  <div className="bg-card p-8 md:p-10 rounded-3xl border border-border/50 shadow-sm group-hover:border-primary/30 group-hover:shadow-xl transition-all duration-500 h-full">
+                  <div className="bg-card p-6 md:p-8 rounded-xl border border-border shadow-sm hover:border-border/80 hover:shadow-md transition-all duration-500 h-full">
                     <h3 className="text-2xl md:text-3xl font-black text-foreground mb-3 tracking-tight group-hover:text-primary transition-colors">
                       {exp.frontMatter.title}
                     </h3>

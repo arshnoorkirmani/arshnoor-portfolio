@@ -7,13 +7,9 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href={siteConfig.nav.home} className="flex items-center gap-2 group cursor-pointer">
-          <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground">
-            <span className="material-symbols-outlined font-bold">code</span>
-          </div>
-          <h2 className="text-lg font-bold tracking-tight text-foreground">
-            AK.dev
-          </h2>
+        <Link href={siteConfig.nav.home} className="flex items-center gap-0.5 group cursor-pointer">
+          <span className="text-2xl font-black font-serif text-foreground tracking-tight">AK</span>
+          <span className="text-2xl font-bold text-primary tracking-tight">.dev</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           <Link
@@ -52,7 +48,7 @@ export default function Nav() {
         <div className="flex items-center gap-4">
           <ThemeButton />
           <a
-            className="bg-primary text-primary-foreground px-5 py-2 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity"
+            className="bg-primary text-primary-foreground px-6 py-2.5 text-sm font-bold rounded-md hover:opacity-90 transition-opacity"
             href={`mailto:${siteConfig.links.email}`}
           >
             Hire Me

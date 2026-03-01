@@ -9,20 +9,17 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-32 w-full max-w-[1200px] mx-auto px-6 relative"
+      className="py-20 md:py-24 lg:py-28 w-full max-w-[1200px] mx-auto px-6 relative"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
-        className="relative overflow-hidden bg-card rounded-[3rem] p-12 md:p-24 border border-border shadow-2xl"
+        className="relative overflow-hidden bg-card rounded-lg p-8 md:p-12 lg:p-16 border border-border shadow-sm hover:shadow-md transition-shadow"
       >
-        {/* Glow Effects inside card */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10 opacity-50 z-0"></div>
-
         <div className="relative z-10 text-center flex flex-col items-center">
-          <div className="inline-flex items-center justify-center size-20 rounded-3xl bg-secondary mb-8 border border-border shadow-sm group hover:scale-110 transition-transform">
+          <div className="inline-flex items-center justify-center size-20 bg-secondary rounded-md mb-8 border border-border shadow-sm group hover:scale-110 transition-transform">
             <Mail className="w-10 h-10 text-primary" strokeWidth={1.5} />
           </div>
 
@@ -41,7 +38,7 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto">
             <a
               href={`mailto:${siteConfig.links.email}`}
-              className="w-full sm:w-auto bg-primary text-primary-foreground px-12 py-5 rounded-2xl font-black text-lg hover:scale-105 shadow-xl hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-3"
+              className="w-full sm:w-auto bg-primary text-primary-foreground px-12 py-5 font-black text-lg rounded-md hover:scale-105 shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center gap-3"
             >
               Say Hello
             </a>
@@ -50,14 +47,14 @@ export default function Contact() {
               <Link
                 href={siteConfig.links.linkedin}
                 target="_blank"
-                className="size-16 rounded-2xl bg-secondary text-foreground flex items-center justify-center hover:bg-card hover:border-primary hover:text-primary hover:scale-110 transition-all duration-300 border border-border shadow-sm group"
+                className="size-16 bg-secondary rounded-md text-foreground flex items-center justify-center hover:bg-card hover:border-primary hover:text-primary hover:scale-110 transition-all duration-300 border border-border shadow-sm group"
               >
                 <Linkedin className="w-6 h-6 group-hover:text-primary transition-colors" />
               </Link>
               <Link
                 href={siteConfig.links.github}
                 target="_blank"
-                className="size-16 rounded-2xl bg-secondary text-foreground flex items-center justify-center hover:bg-card hover:border-primary hover:text-primary hover:scale-110 transition-all duration-300 border border-border shadow-sm group"
+                className="size-16 bg-secondary rounded-md text-foreground flex items-center justify-center hover:bg-card hover:border-primary hover:text-primary hover:scale-110 transition-all duration-300 border border-border shadow-sm group"
               >
                 <Github className="w-6 h-6 group-hover:text-primary transition-colors" />
               </Link>

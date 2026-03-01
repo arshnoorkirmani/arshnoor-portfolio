@@ -6,14 +6,16 @@
 export const siteConfig = {
   name: "Arshnoor Kirmani",
   url: "https://arshnoorkirmani.dev",
-  description: "Front-End Developer Portfolio",
+  description: "Front-End Developer & Junior Software Engineer Portfolio",
   
   // Social and Contact Links
   links: {
-    github: "https://github.com/arshnoork",
+    github: "https://github.com/arshnoorkirmani",
     linkedin: "https://linkedin.com/in/arshnoorkirmani",
+    twitter: "https://twitter.com/arshnoorkirmani",
     email: "personal.arshnoorkirmani@gmail.com",
-    resume: "/resume.pdf", // Add your resume PDF to public folder
+    resume: "https://drive.google.com/file/d/1lVObaYBEi64xXxJkJ1fVI4LiXaNRid0_/view?usp=sharing", // Add your resume PDF to public folder
+    // resume: "#resume", // Add your resume PDF to public folder
   },
   
   // Section Navigation Links

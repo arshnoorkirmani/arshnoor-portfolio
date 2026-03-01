@@ -24,7 +24,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-32 w-full relative overflow-hidden bg-card/50"
+      className="py-20 md:py-24 lg:py-28 w-full relative overflow-hidden bg-card/50"
     >
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
@@ -40,7 +40,7 @@ export default function About() {
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-serif">
                 Beyond the Code.
               </h2>
-              <div className="h-1.5 w-24 bg-primary rounded-full"></div>
+              <div className="h-1.5 w-24 bg-primary"></div>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -62,8 +62,8 @@ export default function About() {
               </span>
             </p>
 
-            <div className="flex items-center gap-5 pt-6 p-6 bg-secondary/30 rounded-2xl border border-border">
-              <div className="size-14 shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
+            <div className="flex items-center gap-5 pt-6 p-6 bg-secondary/30 rounded-md border border-border">
+              <div className="size-14 shrink-0 bg-primary/10 rounded-md flex items-center justify-center border border-primary/20">
                 <Lightbulb className="w-7 h-7 text-primary" strokeWidth={2.5} />
               </div>
               <div>
@@ -87,18 +87,25 @@ export default function About() {
           >
             {[
               {
-                label: "Years Exp.",
-                value: "5+",
+                label: "Projects Built",
+                value: "10+",
                 icon: (
-                  <ScanFace
+                  <Code2
                     className="w-24 h-24 text-primary"
                     strokeWidth={1}
                   />
                 ),
               },
               {
-                label: "Live Sites",
-                value: "20+",
+                label: "Students Mentored",
+                value: "15+",
+                icon: (
+                  <ScanFace className="w-24 h-24 text-primary" strokeWidth={1} />
+                ),
+              },
+              {
+                label: "Performance Score",
+                value: "97+",
                 icon: (
                   <Globe2 className="w-24 h-24 text-primary" strokeWidth={1} />
                 ),
@@ -107,13 +114,6 @@ export default function About() {
                 label: "Clean Code",
                 value: "100%",
                 icon: (
-                  <Code2 className="w-24 h-24 text-primary" strokeWidth={1} />
-                ),
-              },
-              {
-                label: "Core Focus",
-                value: "Arch.",
-                icon: (
                   <Box className="w-24 h-24 text-primary" strokeWidth={1} />
                 ),
               },
@@ -121,7 +121,7 @@ export default function About() {
               <motion.div
                 variants={cardVariants}
                 key={i}
-                className="group relative p-8 md:p-10 rounded-3xl bg-card border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1"
+                className="group relative p-6 md:p-8 bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-border/80"
               >
                 <div className="absolute -top-4 -right-4 p-4 opacity-10 group-hover:opacity-20 transition-opacity transform group-hover:scale-110 group-hover:rotate-12 duration-500 pointer-events-none">
                   {stat.icon}

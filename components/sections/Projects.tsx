@@ -44,7 +44,7 @@ export default function Projects({ projects }: { projects: ProjectItem[] }) {
             href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex border border-primary/20 bg-primary/5 hover:bg-primary hover:text-primary-foreground hover:border-primary items-center gap-3 px-6 py-3 rounded-2xl text-primary font-medium shadow-sm hover:shadow-lg transition-all duration-300 w-fit"
+            className="group flex bg-card border rounded-md border-border hover:bg-primary hover:text-primary-foreground hover:border-primary items-center gap-3 px-6 py-3 text-primary font-medium shadow-sm hover:shadow-md transition-all duration-300 w-fit"
           >
             <span>View GitHub</span>
             <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -62,7 +62,7 @@ export default function Projects({ projects }: { projects: ProjectItem[] }) {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="group w-full relative rounded-3xl overflow-hidden bg-card border border-border shadow-md hover:shadow-2xl hover:border-primary/50 transition-all duration-500 flex flex-col hover:-translate-y-2"
+              className="group w-full relative overflow-hidden rounded-xl bg-card border border-border shadow-sm hover:shadow-md hover:border-border/80 transition-all duration-500 flex flex-col hover:-translate-y-2"
             >
               <div className="p-8 pb-6 bg-card border-b border-border/50 flex flex-col items-start gap-4 flex-1">
                 <div className="flex justify-between items-start w-full gap-4">
@@ -71,7 +71,7 @@ export default function Projects({ projects }: { projects: ProjectItem[] }) {
                   </h3>
                   <Link
                     href={siteConfig.links.github}
-                    className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/50 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 shrink-0 border border-border/50 hover:border-primary text-xs font-semibold group/link"
+                    className="flex items-center gap-2 px-3 py-1.5 bg-secondary/50 rounded-md text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 shrink-0 border border-border hover:border-border/80 text-xs font-semibold group/link"
                   >
                     <Github className="w-4 h-4" />
                     <span className="hidden sm:inline-block">Source code</span>
@@ -114,7 +114,7 @@ export default function Projects({ projects }: { projects: ProjectItem[] }) {
                   {project.frontMatter.techStack.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[11px] font-medium px-3 py-1 bg-secondary/50 text-secondary-foreground rounded-lg border border-border/30 hover:border-primary/30 transition-colors"
+                      className="text-[11px] font-medium px-3 py-1 bg-secondary/50 rounded-md text-secondary-foreground border border-border hover:border-border/80 transition-colors"
                     >
                       {tag}
                     </span>

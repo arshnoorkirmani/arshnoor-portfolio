@@ -27,7 +27,7 @@ export default function Education({
   };
 
   return (
-    <section id="education" className="py-32 w-full">
+    <section id="education" className="py-20 md:py-24 lg:py-28 w-full">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex items-center gap-4 mb-20">
           <GraduationCap className="w-10 h-10 text-primary" />
@@ -48,10 +48,9 @@ export default function Education({
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="relative p-8 md:p-10 rounded-3xl bg-card border border-border shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-500 group overflow-hidden flex flex-col h-full"
+                className="relative p-6 md:p-8 rounded-xl bg-card border border-border shadow-sm hover:shadow-md hover:border-border/80 transition-all duration-500 group overflow-hidden flex flex-col h-full"
               >
-                {/* Decorative glow */}
-                <div className="absolute -top-12 -right-12 w-32 h-32 bg-primary/20 rounded-full blur-[50px] group-hover:bg-primary/30 transition-colors duration-700 pointer-events-none" />
+                {/* Decorative glow removed */}
                 
                 <div className="relative z-10 flex flex-col h-full">
                   <div className="flex flex-col gap-2 mb-6">

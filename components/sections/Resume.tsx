@@ -1,69 +1,89 @@
 "use client";
 
 import { motion } from "motion/react";
-import { FileText, Download } from "lucide-react";
+import { FileText, Download, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export default function Resume() {
+  const containerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8 },
+    },
+  };
+
   return (
-    <section
-      id="resume"
-      className="py-16 md:py-32 w-full max-w-[1200px] mx-auto px-6 relative"
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="relative overflow-hidden bg-card rounded-[3rem] p-12 md:p-20 border border-border shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 group hover:border-primary/50 hover:shadow-primary/5 transition-all duration-700"
-      >
-        {/* Subtle Ambient Glow */}
-        <div className="absolute -top-24 -left-24 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none group-hover:bg-primary/30 transition-colors duration-700"></div>
-
-        {/* Large decorative icon in background */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-[0.015] pointer-events-none transition-transform duration-700 group-hover:scale-105 group-hover:-rotate-3">
-          <FileText className="w-80 h-80 md:w-[500px] md:h-[500px] -mr-20" />
-        </div>
-
-        <div className="relative z-10 flex-col flex items-start text-left max-w-xl">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-12 rounded-2xl bg-secondary flex items-center justify-center border border-border/50 group-hover:border-primary/50 group-hover:bg-primary/10 transition-colors duration-500 shrink-0 shadow-sm">
-              <FileText className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
-            </div>
-            <div>
-              <h3 className="text-xl md:text-2xl font-black text-foreground tracking-tight group-hover:text-primary transition-colors">
-                Full Overview
-              </h3>
-            </div>
+    <section id="resume" className="py-16 md:py-20 w-full">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <div className="flex flex-col space-y-4 mb-16">
+          <div className="flex items-center gap-4">
+            <FileText className="w-10 h-10 text-primary" strokeWidth={2} />
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight font-serif text-foreground">
+              Resume.
+            </h2>
           </div>
-
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight font-serif tracking-tighter text-balance">
-            Want the full story?
-          </h2>
-          <p className="text-muted-foreground text-xl leading-relaxed font-medium">
-            Grab a copy of my traditional resume for a complete breakdown of my
-            educational background and professional timeline.
+          <p className="text-muted-foreground text-lg max-w-lg leading-relaxed">
+            A comprehensive overview of my professional timeline and technical expertise.
           </p>
         </div>
 
-        <div className="relative z-10 shrink-0 w-full sm:w-auto">
-          <a
-            href={siteConfig.links.resume}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-4 bg-primary text-primary-foreground px-10 py-6 rounded-2xl font-black text-xl shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300 w-full sm:w-auto overflow-hidden group/btn relative"
-          >
-            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 ease-in-out pointer-events-none"></div>
-            <Download className="w-7 h-7 relative z-10" />
-            <span className="relative z-10">Download Resume</span>
-          </a>
-          
-          <div className="mt-6 flex items-center justify-center gap-2 text-muted-foreground text-sm font-medium">
-            <FileText className="w-4 h-4 opacity-70" />
-            <span>PDF Format • ~120KB</span>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="relative bg-card rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow duration-500 overflow-hidden"
+        >
+          {/* Subtle low opacity texture */}
+          <div className="absolute right-0 top-0 opacity-[0.01] pointer-events-none">
+            <FileText className="w-96 h-96 -mt-20 -mr-20" />
           </div>
-        </div>
-      </motion.div>
+
+          <div className="p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+            {/* Left Column */}
+            <div className="w-full md:w-1/2 space-y-6">
+              <p className="text-2xl font-black text-foreground font-serif tracking-tight">
+                Want the full story?
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Grab a copy of my traditional resume for a complete, printable breakdown of my background. The document includes:
+              </p>
+              <ul className="space-y-4 mt-6">
+                {[
+                  "Technical Skills Overview",
+                  "Experience Breakdown",
+                  "Project Highlights",
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-3 text-foreground font-medium">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Right Column */}
+            <div className="w-full md:w-1/2 flex flex-col items-start md:items-end text-left md:text-right shrink-0">
+              <a
+                href={siteConfig.links.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-5 text-lg font-bold rounded-md shadow-sm hover:shadow-md transition-all duration-300 w-full sm:w-auto"
+              >
+                <Download className="w-6 h-6 transition-transform group-hover:-translate-y-1" />
+                <span>Download Resume</span>
+              </a>
+              
+              <div className="mt-4 flex items-center gap-2 text-muted-foreground text-sm font-medium">
+                <FileText className="w-4 h-4" />
+                <span>PDF Format • ~120KB</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }

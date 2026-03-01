@@ -42,7 +42,7 @@
   --font-serif: 'Source Serif 4', 'Geist', 'Geist Fallback', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-mono: 'Source Code Pro', 'Geist Mono', 'Geist Mono Fallback', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
-  --radius: 0rem;
+  --radius: 0.75rem;
   
   --shadow-2xs: 0px 1px 2.5px 0px oklch(0.49 0.09 235.00 / 0.03);
   --shadow-xs: 0px 1px 2.5px 0px oklch(0.49 0.09 235.00 / 0.03);
