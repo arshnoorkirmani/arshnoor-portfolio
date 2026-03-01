@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "title": "Languages",
+      "skills": [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Python",
+        "HTML5",
+        "CSS3",
+        "Java"
+      ]
+    },
+    {
+      "title": "Frontend",
+      "skills": [
+        "React.js",
+        "Next.js",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "React Hook Form",
+        "Zod"
+      ]
+    },
+    {
+      "title": "Backend",
+      "skills": [
+        "Node.js",
+        "MongoDB",
+        "Mongoose",
+        "NextAuth.js",
+        "Bcrypt.js",
+        "Appwrite"
+      ]
+    },
+    {
+      "title": "Tools & Concepts",
+      "skills": [
+        "Git / GitHub",
+        "Postman",
+        "Axios",
+        "REST APIs",
+        "ImageKit",
+        "Responsive Design",
+        "Web Perf.",
+        "Code Splitting",
+        "Memoization"
+      ]
+    }
+  ]
+}
