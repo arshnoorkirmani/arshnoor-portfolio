@@ -141,7 +141,7 @@ export const Transition: React.FC<TransitionProps> = ({
   return (
     <div ref={ref} className='relative w-full h-full min-h-full'>
       <div className='relative z-0 w-full h-full'>
-        {!showIntro && children}
+        {children}
       </div>
 
       {showIntro && (
