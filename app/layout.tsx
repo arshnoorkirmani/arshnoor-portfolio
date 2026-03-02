@@ -50,8 +50,8 @@ export default function RootLayout({
           <div className="relative grid min-h-screen w-full flex-col overflow-x-hidden">
             {/* First Load Transition */}
             <Transition
-              introDuration={2}
-              transitionDuration={1.2}
+              introDuration={2.2}
+              transitionDuration={1.6}
               type="curved"
               direction="bottom"
               autoExit

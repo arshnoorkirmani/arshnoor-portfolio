@@ -4,7 +4,7 @@
 
 > **Front-End Developer & Jr. Software Engineer specializing in modern, scalable web applications.**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-arshnoorkirmani.dev-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://arshnoorkirmani.dev)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-arshnoorkirmani.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://arshnoorkirmani.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Built_with-Next.js_15-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/Core-React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)

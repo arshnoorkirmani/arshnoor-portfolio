@@ -51,7 +51,7 @@ export default function Hero() {
           </h1>
 
           {/* Dynamic Role */}
-          <div className="text-3xl sm:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold tracking-tight mt-2 sm:mt-4">
+          <div className="text-3xl sm:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold tracking-tight inline-block relative z-10 -mt-2 sm:-mt-4 lg:-mt-6">
             <TypingAnimation
               words={[
                 "Frontend Developer",
@@ -59,7 +59,7 @@ export default function Hero() {
                 "UI/UX Enthusiast",
                 "TypeScript Developer"
               ]}
-              className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent justify-center items-center"
+              className="inline-block bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent leading-relaxed py-1 pr-1"
             />
           </div>
 

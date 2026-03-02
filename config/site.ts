@@ -5,7 +5,7 @@
 
 export const siteConfig = {
   name: "Arshnoor Kirmani",
-  url: "https://arshnoorkirmani.dev",
+  url: "https://arshnoorkirmani.vercel.app",
   description: "Front-End Developer & Junior Software Engineer Portfolio",
   
   // Social and Contact Links
