@@ -15,10 +15,10 @@ A highly optimized, professional portfolio built with Next.js App Router, React 
 
 - **⚡ Blazing Fast**: Next.js App Router with ISR (Incremental Static Regeneration) for instant page loads.
 - **📝 MDX Powered**: Experience, Projects, and Education sections are dynamically generated from `.mdx` and `.json` files for type-safe, easy content management.
-- **🎨 Modern Design**: Custom Tailwind config utilizing `oklch` color spaces for a premium dark/light mode aesthetic, glassmorphism, and smooth Framer Motion animations.
+- **🎨 Modern Design**: Custom Tailwind config utilizing `oklch` color spaces, premium Outfit & Fira Code typography, and smooth Framer Motion animations.
 - **🧩 Shadcn UI Integration**: Built on top of reusable, accessible Radix UI primitives.
-- **📱 Responsive & Accessible**: 100% mobile responsive with rigorous adherence to web accessibility standards.
-- **📈 SEO Optimized**: Configured with dynamic metadata, sitemaps, and optimized Next/Image assets.
+- **📱 Responsive & Accessible**: 100% mobile responsive (including Hero typing animations) with rigorous adherence to web accessibility standards.
+- **📈 SEO Optimized**: Configured with dynamic metadata, custom Open Graph (OG) images, sitemaps, and optimized Next/Image assets.
 
 ## 🛠 Tech Stack
 
