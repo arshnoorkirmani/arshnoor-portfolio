@@ -40,6 +40,68 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${outfit.variable} ${firaCode.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Person",
+                  "name": "Arshnoor Kirmani",
+                  "url": "https://arshnoorkirmani.vercel.app",
+                  "jobTitle": "Frontend Developer",
+                  "worksFor": {
+                    "@type": "Organization",
+                    "name": "Self-employed"
+                  },
+                  "sameAs": [
+                    "https://github.com/arshnoorkirmani",
+                    "https://linkedin.com/in/arshnoorkirmani",
+                    "https://arshnoorkirmani.vercel.app"
+                  ],
+                  "knowsAbout": ["React", "Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"]
+                },
+                {
+                  "@type": "WebSite",
+                  "name": "Arshnoor Kirmani Portfolio",
+                  "url": "https://arshnoorkirmani.vercel.app"
+                },
+                {
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Who is Arshnoor Kirmani?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Arshnoor Kirmani is a Frontend Developer and Software Engineer from India specializing in React, Next.js, and scalable web architectures."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What technologies does Arshnoor Kirmani use?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Arshnoor Kirmani primarily uses React.js, Next.js, Node.js, TypeScript, and MongoDB for full-stack and frontend development."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Where is Arshnoor Kirmani located?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Arshnoor Kirmani is located in India, working as a web developer and frontend instructor."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })
+          }}
+        />
+      </head>
       <body className="bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary min-h-screen">
         <ThemeProvider
           attribute="class"
@@ -73,7 +135,7 @@ export default function RootLayout({
 
                     {/* Headline */}
                 <div className="space-y-2">
-                  <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter font-serif animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200 fill-mode-both">
+                  <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter font-serif animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200 fill-mode-both">
                     <span className="block text-foreground mb-2">
                       Welcome to
                     </span>
@@ -81,7 +143,7 @@ export default function RootLayout({
                       words={["My Portfolio", "My Universe", "My Creations", "My Story"]}
                       className="inline-block bg-clip-text text-transparent bg-linear-to-br from-primary to-primary/50 pb-2 border-none"
                     />
-                  </h1>
+                  </div>
                 </div>
 
                     {/* Elegant Divider */}

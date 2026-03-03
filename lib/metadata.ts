@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
-const defaultTitle = "Arshnoor Kirmani | Front-End Developer";
+const defaultTitle = "Arshnoor Kirmani | Frontend Developer | React & Next.js";
 const defaultDescription =
-  "Front-End Developer specializing in building scalable, high-performance web applications using React.js, Next.js, and TypeScript.";
+  "Frontend Developer from India specializing in building scalable, high-performance web applications. Expert React Developer and Next.js Developer.";
 const defaultUrl = siteConfig.url; // Centralized in site.ts
 
 export const defaultMetadata: Metadata = {
@@ -12,6 +12,14 @@ export const defaultMetadata: Metadata = {
     default: defaultTitle,
   },
   description: defaultDescription,
+  keywords: [
+    "Arshnoor Kirmani",
+    "Frontend Developer India",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript Developer",
+    "Software Engineer"
+  ],
   metadataBase: new URL(defaultUrl),
   alternates: {
     canonical: "/",

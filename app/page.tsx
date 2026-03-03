@@ -57,14 +57,19 @@ export default async function Home() {
       </div>
 
       <main className="w-full flex min-h-screen flex-col items-center justify-between overflow-x-hidden relative z-10">
-        <Hero />
-        <About />
-        <Experience experience={experienceFiles} />
-        <Projects projects={projectFiles} />
-        <Skills skillsCategories={skillsData.categories} />
-        <Education education={educationFiles} />
-        <Resume />
-        <Contact />
+        <header className="sr-only">
+          <h1>Arshnoor Kirmani Frontend Developer</h1>
+        </header>
+        <article>
+          <Hero />
+          <About />
+          <Experience experience={experienceFiles} />
+          <Projects projects={projectFiles} />
+          <Skills skillsCategories={skillsData.categories} />
+          <Education education={educationFiles} />
+          <Resume />
+          <Contact />
+        </article>
       </main>
       <Footer />
     </>

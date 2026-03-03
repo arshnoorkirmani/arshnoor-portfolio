@@ -44,12 +44,14 @@ export default function About() {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I specialize in creating pixel-perfect, high-performance
-              interfaces that don't just look good, but are built to scale. My
-              approach combines technical rigor with a deep understanding of
+              As a dedicated <strong className="font-semibold text-foreground">Frontend Developer</strong> from India, 
+              I specialize in creating pixel-perfect, high-performance 
+              React and Next.js interfaces that don't just look good, but are built to scale. 
+              My approach combines technical rigor with a deep understanding of 
               user psychology.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
+              Hi, I'm <strong className="font-semibold text-foreground">Arshnoor Kirmani</strong>. 
               Beyond production code, I have a passion for education. As a
               frontend instructor, I focus on teaching the core fundamentals of
               the web, ensuring the next generation understands the{" "}
