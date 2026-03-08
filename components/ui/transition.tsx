@@ -107,6 +107,19 @@ export const Transition: React.FC<TransitionProps> = ({
     }
   }, [trigger, autoExit, showIntro, startTransition]);
 
+  // Hide body scrollbar while the intro is showing
+  useEffect(() => {
+    if (showIntro) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showIntro]);
+
   const getCurvedClip = (p: number) => {
     const startRadius = 160;
     const radius = Math.max(0, startRadius * (1 - p));
