@@ -13,8 +13,8 @@ export const siteConfig = {
     github: "https://github.com/arshnoorkirmani",
     linkedin: "https://linkedin.com/in/arshnoorkirmani",
     twitter: "https://twitter.com/arshnoorkirmani",
-    email: "personal.arshnoorkirmani@gmail.com",
-    resume: "https://drive.google.com/file/d/1lVObaYBEi64xXxJkJ1fVI4LiXaNRid0_/view?usp=sharing", // Add your resume PDF to public folder
+    email: "dev.arshnoorkirmani@gmail.com",
+    resume: "https://drive.google.com/file/d/1QqCHnlewvl56XJcFWw0ZvV0rbv2nXUeB/view?usp=sharing", // Add your resume PDF to public folder
     // resume: "#resume", // Add your resume PDF to public folder
   },
   
